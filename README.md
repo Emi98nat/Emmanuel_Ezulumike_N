@@ -1,2 +1,2 @@
 # Emmanuel_Ezulumike_N
-This is my main CV wesite 
+This is my main CV website 
