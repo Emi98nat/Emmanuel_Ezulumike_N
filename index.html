@@ -1,92 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Emmanuel Natachukwu Ezulumike</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- normalize css -->
-    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/normalize.css" />
     <!-- custom css -->
-  <link rel="stylesheet" href="src/css/landing.css">  
-  
-  <!-- google fonts --> 
-  <link rel="stylesheet" href="src/css/googlefonts.css">
-  
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="src/css/all.css">
-</head>
-<body>
+    <link rel="stylesheet" href="src/css/landing.css" />
+
+    <!-- google fonts -->
+    <link rel="stylesheet" href="src/css/googlefonts.css" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="src/css/all.css" />
+  </head>
+  <body>
     <!-- HEADER -->
     <header class="header">
+      <span class="logo">
+        Emi<i class="fab fa-themeco"></i><span id="nat">Nat</span>
+      </span>
 
-        <span class="logo">
-            Emi<i class="fab fa-themeco"></i><span id="nat">Nat</span>
-        </span>
+      <!--nav for larger screens-->
+      <nav class="nav">
+        <ul class="nav-container">
+          <li class="nav-content"><a href="#" class="nav-link">HOME</a></li>
+          <li class="nav-content"><a href="#" class="nav-link">ABOUT</a></li>
+          <li class="nav-content"><a href="#" class="nav-link">PROJECT</a></li>
+          <li class="nav-content"><a href="#" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
 
-        <!--nav for larger screens-->
-        <nav class="nav">
-          <ul class="nav-container">
-              <li class="nav-content"><a href="#" class="nav-link">HOME</a></li>
-              <li class="nav-content"><a href="#" class="nav-link">ABOUT</a></li>
-              <li class="nav-content"><a href="#" class="nav-link">PROJECT</a></li>
-              <li class="nav-content"><a href="#" class="nav-link">CONTACT</a></li>
-          </ul>
-        </nav>
-
-<div class="burger"><!--  onclick="myFunction(this)"-->
-            <div class="menu-icon icon1">
-
-            </div>
-            <div class="menu-icon icon2">
-
-            </div>
-            <div class="menu-icon icon3">
-
-            </div>
-        </div>
+      <div class="burger">
+        <!--  onclick="myFunction(this)"-->
+        <div class="menu-icon icon1"></div>
+        <div class="menu-icon icon2"></div>
+        <div class="menu-icon icon3"></div>
+      </div>
     </header>
 
     <!-- body -->
     <main class="main">
-
+      <section class="section" id="home">
+        <div class="background-overlay"></div>
+        <div class="background-images">
+          <img src="images/freePikBird.png" alt="birds" class="png" id="bird" />
+          <img
+            src="images/freePikMountain.png"
+            alt="mountain"
+            class="png"
+            id="mountain"
+          />
+          <img
+            src="images/freePikSun.png"
+            alt="sunshine"
+            class="png"
+            id="sunshine"
+          />
+        </div>
+        <div class="intro">
+          <span>Hi, I am</span>
+          <h1>Emmanuel Ezulumike</h1>
+          <p>...a web developer</p>
+        </div>
+      </section>
+      <section class="section" id="about">
+        <h2>About Me</h2>
+        <p>
+          "As a full-stack developer with two years of experience, I am a driven
+          and versatile programmer with a passion for creating innovative and
+          user-friendly web applications. I have a strong foundation in both
+          front-end and back-end development, and am always looking to expand my
+          skillset and take on new challenges. Throughout my career, I have
+          gained experience working with a variety of programming languages and
+          frameworks, including JavaScript, React, Node.js, and Express.js. I am
+          highly skilled in responsive design and am able to create visually
+          appealing and responsive websites that work seamlessly across all
+          devices. In addition to my technical skills, I am also a strong
+          communicator and a team player. I enjoy collaborating with other
+          developers, designers, and stakeholders to create engaging and
+          effective web experiences for end users.
+        </p>
+      </section>
+      <section class="section" id="project"></section>
+      <section class="section" id="contact"></section>
     </main>
 
-
-<!-- navigation for smaller screens -->
+    <!-- navigation for smaller screens -->
     <div class="nav-sm">
-        <ul class="sm-container">
-            <li class="sm-link" id="link 1">
-                <a href="#" class="link-sm">HOME</a>
-            </li>
-            
-            <li class="sm-link" id="link 2">
-                <a href="#" class="link-sm">ABOUT</a>
-            </li>
-            
-            <li class="sm-link" id="link 3">
-                <a href="#" class="link-sm">PROJECT</a>
-            </li>
-            
-            <li class="sm-link" id="link 4">
-                <a href="#" class="link-sm">CONTACT</a>
-            </li>
-        </ul>
+      <ul class="sm-container">
+        <li class="sm-link" id="link 1">
+          <a href="#" class="link-sm">HOME</a>
+        </li>
+
+        <li class="sm-link" id="link 2">
+          <a href="#" class="link-sm">ABOUT</a>
+        </li>
+
+        <li class="sm-link" id="link 3">
+          <a href="#" class="link-sm">PROJECT</a>
+        </li>
+
+        <li class="sm-link" id="link 4">
+          <a href="#" class="link-sm">CONTACT</a>
+        </li>
+      </ul>
     </div>
-    
-    
+
     <!-- footer -->
     <footer class="footer">
-<span class="myName">Emmanuel Ezulumike .N.</span>
-<p>&copy; 2023 All Rights Reserved.</p>
+      <span class="myName">Emmanuel Ezulumike .N.</span>
+      <p>&copy; 2023 All Rights Reserved.</p>
     </footer>
-    
-    
-    
+
     <!--main script-->
-    <script src="src/js/landing.js" type="text/javascript" charset="utf-8"></script>
-    
+    <script
+      src="src/js/landing.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+
     <noscript>
-        page runs with javascript, do ensure javascript is allowed
+      page runs with javascript, do ensure javascript is allowed
     </noscript>
-</body>
+  </body>
 </html>
