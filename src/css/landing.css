@@ -129,6 +129,7 @@ body {
   width: 100%;
   height: 100%;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 /*landing page home starts*/
@@ -212,7 +213,7 @@ body {
   left: 10%;
 }
 
-/*montain*/
+/*mountain*/
 #mountain {
   position: absolute;
   width: 500px;
@@ -236,6 +237,64 @@ body {
 }
 /*Home styles ends*/
 
+/*about page start*/
+
+/*about page ends*/
+
+/*projects page starts*/
+
+/*carousel of projects starts*/
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  margin: 10px;
+}
+
+.slides {
+  display: flex;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.dots {
+  display: flex;
+  margin: 0 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #000;
+}
+/*carousel of projects ends*/
+/*projects page ends*/
 /*main section styles end*/
 
 /* footer */
