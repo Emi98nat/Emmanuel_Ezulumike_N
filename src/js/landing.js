@@ -45,3 +45,41 @@ changeBurger(burger);
 })
 }
 )
+
+
+//carousel starts
+
+var slideIndex = 0;
+var slides = document.querySelectorAll('.slide');
+var prev = document.querySelector('.prev');
+var next = document.querySelector('.next');
+var dots = document.querySelectorAll('.dot');
+
+function showSlide(n) {
+  slides[slideIndex].style.display = 'none';
+    dots[slideIndex].classList.remove('active');
+    slides[slideIndex].classList.remove('show');
+  slideIndex = (n + slides.length) % slides.length;
+  slides[slideIndex].style.display = 'block';
+  dots[slideIndex].classList.add('active');
+}
+
+function prevSlide() {
+  showSlide(slideIndex - 1);
+}
+
+function nextSlide() {
+  showSlide(slideIndex + 1);
+}
+
+prev.addEventListener('click', prevSlide);
+next.addEventListener('click', nextSlide);
+
+dots.forEach(function(dot, index) {
+  dot.addEventListener('click', function() {
+    showSlide(index);
+  });
+});
+
+showSlide(0);
+//carousel ends
