@@ -229,7 +229,14 @@ body {
   font-weight: 800;
   font-size: 2.1em;
 }
-/*main section styles*/
+.middle-name {
+  font-family: "Sacramento", cursive;
+  font-size: 2.1em;
+  margin-bottom: 10px;
+}
+/*Home styles ends*/
+
+/*main section styles end*/
 
 /* footer */
 .footer {
