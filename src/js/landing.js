@@ -1,4 +1,4 @@
-/*function myFunction(x) { x.classList.toggle("change"); }*/
+//Animate burger menu starts
 
 //burger menu
 const burger = document.querySelector(".burger");
@@ -32,6 +32,7 @@ const navSm = document.querySelector(".nav-sm");
     }
     return (changeBurger(burger),hideNav(burger));
 }
+//burger menu control end
 
 //remove navigation when link is clicked
 link.forEach(e =>{
@@ -82,4 +83,9 @@ dots.forEach(function(dot, index) {
 });
 
 showSlide(0);
+
+setInterval(function(){
+    nextSlide();
+}, 3000)
+
 //carousel ends
